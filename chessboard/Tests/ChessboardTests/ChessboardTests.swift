@@ -6,7 +6,6 @@ import Testing
 let RUNALL = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "true"]) ?? false
 @Suite struct ChessboardTests {
     func generateBoard() -> [String] {
-        print("RUNALL:", RUNALL)
         var board = [String]()
         let files2 = ["A", "B", "C", "D", "E", "F", "G", "H"]
         for rank in 1...8 {
